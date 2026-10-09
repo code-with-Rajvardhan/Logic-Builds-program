@@ -1,0 +1,66 @@
+/*  
+    step 1 : Understand the problem statement
+    step 2 : Write the algorithm
+    step 3 : decide the language
+    step 4 : write the program
+    step 5 : test the program
+    
+*/
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// step 1: Understand the problem statement
+//         user is going to enter any 2 integers 
+//         and we have to program addition            
+//
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// step 2 : Write the algorithm
+//   
+/* 
+     start 
+            Accept 1st number as no1 
+            Accept 2nd number as no2
+            Create the variable as to store the result
+            perform the addition and store into ans
+            display the rsult ffrom ans
+*/
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//   step 3: decide the language
+//   we select the programming language 
+//
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  step 4 : write the program
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+int Addition(int iNo1 , int iNo2)
+{
+    int iAns = 0;
+
+    iAns = iNo1 + iNo2;      // business logic
+
+    return iAns;
+}
+
+int main()
+{
+    int iValue1= 0, iValue2= 0, iResult= 0;
+
+    printf("Enter first number : \n");
+    scanf("%d",&iValue1);
+
+    printf("Enter second number : \n");
+    scanf("%d",&iValue2);
+
+    iResult = Addition(iValue1,iValue2); 
+
+    printf("Addition is : %d\n",iResult);
+
+
+    return 0;
+}
